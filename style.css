@@ -172,7 +172,7 @@ header:after {
 .box{
     width: 300px;
     overflow: hidden;
-    height: 400px;
+    height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
