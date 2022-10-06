@@ -199,9 +199,9 @@ header:after {
 
 .journey
 {
-    font-family: 'Alkalami', serif;
+    /* font-family: 'Alkalami', serif; */
     line-height: 1px;
-    background: url("https://images.unsplash.com/photo-1524946274118-e7680e33ccc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background: url("https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
     height: 300px;
     text-align: center;
     display: flex;
