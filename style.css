@@ -9,6 +9,11 @@ body{
 {
     display: flex;
 }
+.cam{
+    margin-left: 25px;
+    color: #29d9d5;
+    margin-top: 23px;
+}
 .navbar {
     display: flex;
     flex-wrap: wrap;
