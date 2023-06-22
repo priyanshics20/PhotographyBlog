@@ -135,7 +135,6 @@ header:after {
     left: 0;
 }
 
-
 .firstsection
 {
     width: 80%;
@@ -202,16 +201,7 @@ header:after {
     height: 400px;
     width: 300px;
 }
-/* .himg
-{
-    width: 800px;
-} */
-/* .box himg
-{
-    position:  absolute;
-    top: 50px;
-    z-index: 100;
-} */
+
 .box:hover
 {
     opacity: 0.6;
@@ -287,7 +277,6 @@ header:after {
 .last input
 {
     background: transparent;
-    
     border-radius: 50px;
     border: none;
     border: 2px solid aqua;
