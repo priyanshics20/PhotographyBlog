@@ -5,9 +5,21 @@ body{
 .nav-item {
     list-style: none;
 }
-.image
-{
+
+@media screen and (max-width:455px) {
+    .nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.image{
     display: flex;
+}
+.image span{
+    height: 3 5px;
+    margin-right: 5px;
 }
 .cam{
     margin-left: 25px;
@@ -22,15 +34,13 @@ body{
 
 header {
     background-color: black;
-    /* opacity: 0.8; */
     color:white;
+    z-index: 10;
 }
-
 .head {
     position: sticky;
     top: 0;
 }
-
 ul {
     margin: auto;
 }
@@ -87,12 +97,6 @@ ul li:hover
         margin-bottom: 10px;
     }
 }
-
-.image img{
-     width: 50px;
-     height: 40px;
-    margin-left: 20px;
-}
 .icon button
 {
     margin-top: 15px;
@@ -105,7 +109,7 @@ ul li:hover
 }
 .icon button:hover
 {
-       background-color: skyblue;
+    background-color: skyblue;
 }
 .navbar i {
     margin-top: 35px;
@@ -178,42 +182,55 @@ header:after {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 15px;
+    position: relative;
+    /* z-index: 1; */
+}
+.menuinfo .box i{
+    position: absolute;
+    margin-right: 15px;
+    top:45%;
+    left:45%;
+    z-index: 1;
+    transform: scale(0);
+    transition: 150ms;
+}
+.menuinfo .box:hover i{
+    transform: scale(2);
 }
 .box img
 {
     height: 400px;
     width: 300px;
 }
-.himg
+/* .himg
 {
     width: 800px;
-}
-.box himg
+} */
+/* .box himg
 {
     position:  absolute;
     top: 50px;
     z-index: 100;
-}
+} */
 .box:hover
 {
     opacity: 0.6;
-    background: url(cameralogo.png);
     text-align: center;
     position: relative;
-    
 }
 
 .journey
 {
     /* font-family: 'Alkalami', serif; */
     line-height: 1px;
-    background: url("https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background: url("https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" );
+    background-size: cover;
     height: 300px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
 }
 @media screen and (max-width: 512px) 
 {
@@ -261,7 +278,7 @@ header:after {
 {
     color: gray;
 }
-i{
+.last i{
    color: aqua;
    padding: 10px 10px 10px 10px;
    border: 2px solid aqua;
@@ -276,7 +293,7 @@ i{
     border: 2px solid aqua;
     padding: 10px 10px 10px 10px;
 }
-i:hover
+.last i:hover
 {
     background-color: rgba(0, 255, 255, 0.378);
 }
@@ -287,5 +304,4 @@ i:hover
 input
 {
     color: white;
-    /*  */
 }
